@@ -52,9 +52,9 @@ footer 元素可以作为其上层父级内容区块或是一个根区块的脚�
 ***
 ## hgroup 元素
 hgroup 元素是将标题及其子标题进行分组的元素。
-***- 使用时遵循以下条件：
+**- 使用时遵循以下条件：
 1.	有一个以上标题元素；
-2.	当一个标题有副标题、其他section或者article的元数据时，建议将hgroup元素和元数据放到一个单独的header 元素容器中。
+2.	当一个标题有副标题、其他section或者article的元数据时，建议将hgroup元素和元数据放到一个单独的header 元素容器中。**
 
 ```html
 <header>
@@ -66,5 +66,6 @@ hgroup 元素是将标题及其子标题进行分组的元素。
 ```
 ***
 # figcaption 和 figure
-figcaption元素用于定义figure 元素的标题，该元素应该被放到figure 元素的第一个或者最后一个子元素的位置。
+figcaption元素用于定义figure 元素的标题，该元素应该被放到figure 元素的第一个或者最后一个子元素的位置。<br>
 figure 元素指定独立的流内容，例如图像、图表、照片和代码。figure元素的内容应该与主内容无关，如果被删除，则不会对文章流产生影响。在使用figure元素时，可以通过figcaption元素添加标题。一个figure元素最多只允许放置一个figcaption元素。
+***

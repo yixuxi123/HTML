@@ -65,3 +65,6 @@ hgroup 元素是将标题及其子标题进行分组的元素。
 </header>
 ```
 ***
+# figcaption 和 figure
+figcaption元素用于定义figure 元素的标题，该元素应该被放到figure 元素的第一个或者最后一个子元素的位置。
+figure 元素指定独立的流内容，例如图像、图表、照片和代码。figure元素的内容应该与主内容无关，如果被删除，则不会对文章流产生影响。在使用figure元素时，可以通过figcaption元素添加标题。一个figure元素最多只允许放置一个figcaption元素。

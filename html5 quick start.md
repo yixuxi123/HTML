@@ -29,3 +29,19 @@ nav 元素是一个可以用作页面导航的链接组。只需要将主要的�
  <a href=“#”>首页</a> |  <a href=“#”>新闻动态</a> |  <a href=“#”>规范标准</a> |  <a href=“#”>文章教程</a> |  <a href=“#”>资源链接</a> |  <a href=“#”>常见问题</a> |  <a href=“#”>论坛交流</a> | 
 </nav>
 ```
+***
+# aside 元素
+aside 元素用来表示当前页或文章的附属信息部分，可以包含与当前页面或主要内容相关的引用、侧边栏、广告、导航条。可用于文章的注释、友情链接等。
+***
+# footer 元素
+footer 元素可以作为其上层父级内容区块或是一个根区块的脚注，通常包含相关区块的脚注信息。
+```html
+<footer>
+<div id=”r”>
+          &copy; copyright 2014, my love website<br />Design: <a href=”#”>Lucy</a>
+</div>
+<div id=”l”>
+      <a href=”#”>XHTML</a> - <a href=”#”>CSS</a>
+</div>
+</footer>
+```

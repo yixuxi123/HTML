@@ -70,6 +70,7 @@ figcaption元素用于定义figure 元素的标题，该元素应该被放到fig
 figure 元素指定独立的流内容，例如图像、图表、照片和代码。figure元素的内容应该与主内容无关，如果被删除，则不会对文章流产生影响。在使用figure元素时，可以通过figcaption元素添加标题。一个figure元素最多只允许放置一个figcaption元素。
 ***
 # 文本语义元素
+***
 ## mark 元素
 mark 元素表示页面中需要突出显示或高亮显示的对于当前用户具有参考作用的一段文字。
 - **通常作用在两方面：**
@@ -85,6 +86,7 @@ mark 元素表示页面中需要突出显示或高亮显示的对于当前用户
 wbr 元素指定在文本中的何处适合添加换行符,决定在此处换行。
 ***
 # 交互元素
+***
 ## meter 元素
 meter元素是用来定义度量衡的元素。
 ```html
@@ -118,6 +120,7 @@ details元素用于说明文档或某个细节信息的作用。<br/>
 
 ***
 # 音频和视频元素
+***
 ## video 元素
 ```html
 <video  src=”URL”  width=”宽度”  height=”高度”  controls  autoplay  preload  loop  poster=”URL”>
@@ -125,12 +128,39 @@ details元素用于说明文档或某个细节信息的作用。<br/>
 </video>
 ```
 - **Preload属性包含三个可选择的值：**
-     - **None：**表示不进行预加载；
-     - **Metadata：**表示只预加载媒体的元数据（媒体字节数、第一帧、播放列表和持续时间等）。
-     - **Auto：**默认值，表示于嘉在全部视频。
-
-
-
+     - None：表示不进行预加载；
+     - Metadata：表示只预加载媒体的元数据（媒体字节数、第一帧、播放列表和持续时间等）。
+     - Auto：默认值，表示于嘉在全部视频。
+***
+# audio 元素
+audio元素不能通过width和height来设置音频播放器的宽度和高度，需要使用CSS样式来指定。（CSS样式指定一般高度为45px）不能使用poster属性。
+***
+# 标准属性
+***
+## hidden 属性
+Hidden属性是一个布尔属性，属性值为true时，元素处于不可见状态；属性值为false时，元素处于可见状态。
+```html
+<input type="button" id="btn" value="显示" onclick="show()" />
+		<p hidden id="showp">本实力三分归元气，七分靠打拼过，四级词汇，水浒传，红楼梦，西游记，三国演义</p>
+<script type="text/javascript">
+			var btn=document.getElementById("btn");
+			function show(){
+				var p=document.getElementById("showp");
+				if (btn.value=="显示") {
+					btn.value="隐藏";
+					p.hidden=false;
+				} else{
+					btn.value="显示";
+					p.hidden=true;
+				}
+			}
+</script>
+```
+## contenteditable 属性
+contenteditable是一个布尔值，属性值设置为true时，元素被指定为允许编辑；属性值设置为false时，元素被指定为不可编辑。
+***
+# spellcheck 属性
+spellcheck属性是一个布尔值，属性值设置为true时，会对用户输入的文本内容进行拼写和语法检查；当属性值设置为false时则不会。
 
 
 

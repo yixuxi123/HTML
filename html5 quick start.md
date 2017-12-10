@@ -101,10 +101,33 @@ meter元素是用来定义度量衡的元素。
      - low：定义范围内的下限值；
      - high：定义范围内的上限值；
      - optimum：最佳值。
+***
+## progress 元素
+progress元素代表一个任务的完整进度。它具有两个属性：value属性表示已经完成了多少工作量；max属性表示总共有多少工作量。两个属性只能指定为有效的浮点数，value属性的值必须大于0 ，且小于或等于max属性的值，max属性的值必须大于0。
+```html
+<section>
+	<h1>dajihao </h1>
+	<p><progress value="45" max="100"><span>45%</span></progress></p>
+</section
+```
+***
+## details 元素
+details元素用于说明文档或某个细节信息的作用。<br/>
+**open**属性定义details是否可见。
+**summary**元素用来定义details元素的标题。  
 
-
-
-
+***
+# 音频和视频元素
+## video 元素
+```html
+<video  src=”URL”  width=”宽度”  height=”高度”  controls  autoplay  preload  loop  poster=”URL”>
+浏览器不支持video元素  //以防有些浏览器不支持video元素
+</video>
+```
+- **Preload属性包含三个可选择的值：**
+     - **None：**表示不进行预加载；
+     - **Metadata：**表示只预加载媒体的元数据（媒体字节数、第一帧、播放列表和持续时间等）。
+     - **Auto：**默认值，表示于嘉在全部视频。
 
 
 
